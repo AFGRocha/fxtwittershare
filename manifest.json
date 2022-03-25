@@ -1,0 +1,26 @@
+{
+    "name": "FXTwitter Share",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*",
+                "https://*/twitter.com/*"
+              ],
+            "js": ["content.js"],
+            "css": ["style.css"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "https://twitter.com/*",
+        "https://*.twitter.com/*",
+        "tabs"
+    ]
+}
