@@ -1,5 +1,4 @@
 chrome.runtime.onMessage.addListener(function (res) {
-    console.log(res)
 
     if(!document.getElementById("FXShare")){
         let fxButton = document.createElement('BUTTON'); // Create a <button> node
@@ -21,7 +20,6 @@ chrome.runtime.onMessage.addListener(function (res) {
     function fxShare(){
         let position = 8;
         let output = [res.slice(0, position), 'fx', res.slice(position)].join('');
-        console.log(output)
         navigator.clipboard.writeText(output);
 
         document.getElementById("FXShare").innerHTML = 'Copied to clipboard'
