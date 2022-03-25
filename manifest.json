@@ -18,6 +18,11 @@
         ],
         "persistent": false
     },
+    "icons": {
+        "16": "fx-icon.png",
+        "48": "fx-icon.png",
+        "128": "fx-icon.png"
+    },
     "permissions": [
         "https://twitter.com/*",
         "https://*.twitter.com/*",
